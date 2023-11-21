@@ -4,6 +4,8 @@
 
 <img width="698" alt="스크린샷 2023-11-21 오후 8 39 17" src="https://github.com/V2LLAIN/Data_Science/assets/104286511/4378e801-2de8-4e1e-96b5-6fd138a6af16">
 
+### 📕Datasets:
+(https://www.kaggle.com/competitions/llm-detect-ai-generated-text/data)
 #
 #
 #
