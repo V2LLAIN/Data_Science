@@ -26,6 +26,7 @@
 #
 ### 📕Submission
 테스트 세트의 각 ID에 대해 해당 에세이가 생성된 확률을 예측해야 합니다. 파일은 헤더를 포함하고 다음 형식을 가져야 합니다:
+
 <img width="158" alt="스크린샷 2023-11-21 오후 8 43 24" src="https://github.com/V2LLAIN/Data_Science/assets/104286511/121da6f2-7596-41a6-bead-0969d92d14b3">
 
 
