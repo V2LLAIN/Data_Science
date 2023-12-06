@@ -14,7 +14,7 @@ if __name__ == '__main__':
         sub.to_csv(args.submission, index=False)
     else:
         clf = MultinomialNB(alpha=0.02)
-        clf2 = GaussianNB(alpha=0.01)
+        clf2 = GaussianNB()
         sgd_model = SGDClassifier(max_iter=args.max_iter, tol=1e-4, loss="modified_huber")
 
         p6 = {'n_iter': 1500, 'verbose': -1, 'objective': 'binary', 'metric': args.p6_metric,
