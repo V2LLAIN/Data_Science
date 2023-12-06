@@ -1,5 +1,6 @@
 # Dataset 및 추가 Data path:
 https://github.com/V2LLAIN/Data_Science/tree/main/TermProject/Dataset
+
 https://drive.google.com/file/d/1J0RKORgYZWjCIENYacyAsbPru-NjRRkd/view?usp=sharing
 #
 # 학습진행하는방법:
