@@ -2,7 +2,7 @@ import gc
 from lightgbm import LGBMClassifier
 from catboost import CatBoostClassifier
 from sklearn.linear_model import SGDClassifier
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.naive_bayes import MultinomialNB, GaussianNB
 from sklearn.ensemble import VotingClassifier
 from config import args
 from dataset import train, test, sub
@@ -14,7 +14,7 @@ if __name__ == '__main__':
         sub.to_csv(args.submission, index=False)
     else:
         clf = MultinomialNB(alpha=0.02)
-        #     clf2 = MultinomialNB(alpha=0.01)
+        clf2 = GaussianNB(alpha=0.01)
         sgd_model = SGDClassifier(max_iter=args.max_iter, tol=1e-4, loss="modified_huber")
 
         p6 = {'n_iter': 1500, 'verbose': -1, 'objective': 'binary', 'metric': args.p6_metric,
@@ -32,9 +32,11 @@ if __name__ == '__main__':
                                  allow_const_label=True, loss_function=args.cat_loss)
 
         ensemble = VotingClassifier(estimators=[('mnb', clf),
+                                                ('gnb', clf2),
                                                 ('sgd', sgd_model),
                                                 ('lgb', lgb),
-                                                ('cat', cat)],
+                                                ('cat', cat)
+                                                ],
                                     weights=args.weights, voting=args.voting, n_jobs=-1)
 
         ensemble.fit(tf_train, y_train)
