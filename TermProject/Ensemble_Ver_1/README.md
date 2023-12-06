@@ -5,7 +5,8 @@ https://drive.google.com/file/d/1J0RKORgYZWjCIENYacyAsbPru-NjRRkd/view?usp=shari
 #
 # 📕 학습진행하는방법:
 
-### weight 조정
+### weight 조정 
+#### 순서대로 MultinomialNB, SGDClassifier, LBBMClassifier, CatBoostClassifier
     python train.py --weights 0.1 0.2 0.3 0.4
 
 ### p6과 catboostclassifier의 learning_rate 조정
