@@ -4,6 +4,18 @@ https://github.com/V2LLAIN/Data_Science/tree/main/TermProject/Dataset
 https://drive.google.com/file/d/1J0RKORgYZWjCIENYacyAsbPru-NjRRkd/view?usp=sharing
 #
 # 학습진행하는방법:
+
+### weight 조정
+    python train.py --weights 0.1 0.2 0.3 0.4
+
+### p6과 catboostclassifier의 learning_rate 조정
+    python train.py --p6_learning_rate 2e-4 --cat_learning_rate 2e-4
+
+### VOCAB_SIZE, MAX_LEN 조정
+    python train.py --MAX_LEN 1024 --VOCAB_SIZE 31000
+
+와 같은 방식으로 train 및 submission파일 생성이 가능합니다.
+
 추가적으로 
 - 파일경로(test, sub, org_train, train, submission)
 - max_iter 및 learning_rate, metric
@@ -19,14 +31,3 @@ Additionally, adjustable during training in the terminal:
 - VOCAB_SIZE, MAX_LEN, LOWERCASE
 - weights, types of voting
 ##
-
-### weight 조정
-    python train.py --weights 0.1 0.2 0.3 0.4
-
-### p6과 catboostclassifier의 learning_rate 조정
-    python train.py --p6_learning_rate 2e-4 --cat_learning_rate 2e-4
-
-### VOCAB_SIZE, MAX_LEN 조정
-    python train.py --MAX_LEN 1024 --VOCAB_SIZE 31000
-
-와 같은 방식으로 train 및 submission파일 생성이 가능합니다.
