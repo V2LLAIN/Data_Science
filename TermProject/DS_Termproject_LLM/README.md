@@ -21,5 +21,8 @@ https://github.com/V2LLAIN/Data_Science/tree/main/TermProject
 
 ### XLNet
     python train.py --MODEL="Leonis/xlnet-ner-hpii"
+#
 
-
+# 📕 추론 및 test진행방법:
+    python infer.py
+마찬가지로 --MODEL을 이용해 inference진행이 가능.
