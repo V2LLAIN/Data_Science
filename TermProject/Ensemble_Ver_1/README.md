@@ -1,10 +1,22 @@
 # 학습진행하는방법:
-추가적으로 lr, batch_size, epoch, model, max_len, seed, weight_decay, padding, truncation 또한 terminal에서 학습 시 조정가능.
+추가적으로 
+- 파일경로(test, sub, org_train, train, submission)
+- max_iter 및 learning_rate, metric
+- max_depth, max_bin, loss
+- VOCAB_SIZE, MAX_LEN, LOWERCASE
+- weights, voting종류
+또한 terminal에서 학습 시 조정가능.
 
-Additionally, the parameters lr, batch_size, epoch, model, max_len, seed, weight_decay, padding, and truncation can be adjusted during training in the terminal.
 
-### BERT
-    python train.py --learning_rate=2e-4 --batch_size=16 --epoch_num=16 --model_name="bert-base-uncased"
+- File paths (test, sub, org_train, train, submission)
+- max_iter, learning_rate, metric
+- max_depth, max_bin, loss
+- VOCAB_SIZE, MAX_LEN, LOWERCASE
+- weights, types of voting
+Additionally, adjustable during training in the terminal.
+
+### weight 조정
+    python train.py --weights 0.1 0.2 0.3 0.4
 
 ### CodeBERT
     python train.py --learning_rate=2e-4 --batch_size=16 --epoch_num=16 --model_name="microsoft/codebert-base"
