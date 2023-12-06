@@ -6,14 +6,14 @@
 - VOCAB_SIZE, MAX_LEN, LOWERCASE
 - weights, voting종류
 또한 terminal에서 학습 시 조정가능.
-
-
+##
+Additionally, adjustable during training in the terminal:
 - File paths (test, sub, org_train, train, submission)
 - max_iter, learning_rate, metric
 - max_depth, max_bin, loss
 - VOCAB_SIZE, MAX_LEN, LOWERCASE
 - weights, types of voting
-Additionally, adjustable during training in the terminal.
+##
 
 ### weight 조정
     python train.py --weights 0.1 0.2 0.3 0.4
