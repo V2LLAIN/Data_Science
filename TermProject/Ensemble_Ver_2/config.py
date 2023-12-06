@@ -25,7 +25,7 @@ parser.add_argument('--MAX_LEN', dest='MAX_LEN', type=int, default=512)
 parser.add_argument('--LOWERCASE', dest='LOWERCASE', type=bool, default=False)
 
 # 리스트 형태의 입력 값을 받을 수 있도록 설정 (nargs='+' 사용)
-parser.add_argument('--weights', dest='weights', metavar='W', nargs='+', type=float, default=[0.07, 0.31, 0.31, 0.31])
+parser.add_argument('--weights', dest='weights', metavar='W', nargs='+', type=float, default=[0.05, 0.05, 0.29, 0.29, 0.32])
 parser.add_argument('--voting', dest='voting', default="soft")
 
 
