@@ -7,19 +7,19 @@ https://github.com/V2LLAIN/Data_Science/tree/main/TermProject
 ### DeBERTa-V3
     python train.py --MODEL="microsoft/deberta-v3-base"
 
-### BERT-GPT2-Detector
+### BERT-GPT2-Detector
     python train.py --MODEL="ArtifactAI/bert-large-gpt2detector-topk40"
 
-### BigBird-RoBERTa
+### BigBird-RoBERTa
     python train.py --MODEL="flax-community/pino-bigbird-roberta-base"
 
-### BERT-GPTDetector
+### BERT-GPTDetector
     python train.py --MODEL="Nintw923/bert-lli-gptdetetor"
 
-### GPT2-L-Detector
+### GPT2-L-Detector
     python train.py --MODEL="bettertextapp/gpt2-large-detector-de-v1"
 
-### XLNet
+### XLNet
     python train.py --MODEL="Leonis/xlnet-ner-hpii"
 
 
