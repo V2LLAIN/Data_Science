@@ -43,6 +43,5 @@
 
 
 #
-#### 🚩 Results: 95.1% with Ensemble(MultinomialNB+SGDClassifier+LGBMClassifier+CatBoostClassifier) Model
-#
-
+#### 🚩 Results: 96% with Ensemble_Ver_1 Model
+<img width="1205" alt="스크린샷 2023-12-06 오후 1 52 17" src="https://github.com/V2LLAIN/Data_Science/assets/104286511/851e2ec6-3828-431b-ad42-29ee13918c94">
