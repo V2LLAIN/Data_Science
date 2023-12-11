@@ -39,6 +39,7 @@
 ### ❗️Results: 
 #### 🚩 Confusion Matrix about each Models
 <img width="1024" alt="스크린샷 2023-11-21 오후 9 11 11" src="https://github.com/V2LLAIN/Data_Science/assets/104286511/5bfc60e8-5c09-492b-b838-888606de7fc4">
+<img width="379" alt="스크린샷 2023-12-11 오후 10 31 39" src="https://github.com/V2LLAIN/Data_Science/assets/104286511/22ac947c-19ef-4a18-853c-b28024207b3d">
 
 
 
