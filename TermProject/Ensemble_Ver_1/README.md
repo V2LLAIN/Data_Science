@@ -15,6 +15,19 @@ https://drive.google.com/file/d/1J0RKORgYZWjCIENYacyAsbPru-NjRRkd/view?usp=shari
 ### VOCAB_SIZE, MAX_LEN 조정
     python train.py --MAX_LEN 1024 --VOCAB_SIZE 31000
 
+### JR Dataset으로 score 출력하는방법.  
+(--test="경로" 설정한 후)
+(아래코드 train.py에 추가및 변경)
+    y_preds = ensemble.predict_proba(tf_test)[:, 1]
+    sub = test.copy()
+    sub['generated'] = y_preds > 0.5
+    sub.to_csv(args.submission, index=False)
+    sub['generated'] = y_preds > 0.5
+    print(float(np.sum(test['generated'] == sub['generated'])) / len(test))
+
+
+
+
 와 같은 방식으로 train 및 submission파일 생성이 가능합니다.
 
 📌 추가적으로 
